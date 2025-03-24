@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Typography Showcase</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Raleway:wght@300;700&family=Oswald:wght@300;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0e0e0e;
+            color: #ffffff;
+        }
+        .navbar {
+            background: #1f1f1f;
+        }
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .hero {
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            text-align: center;
+            padding: 120px 0;
+            animation: fadeIn 2s ease-in;
+        }
+        .hero h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 48px;
+            animation: slideInLeft 1.5s ease-out;
+        }
+        .hero p {
+            font-family: 'Raleway', sans-serif;
+            font-size: 20px;
+            animation: slideInRight 1.5s ease-out;
+        }
+        .carousel-item img {
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(255, 117, 140, 0.5);
+        }
+        .typography-heading, .design-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+            color: #ff758c;
+            text-align: center;
+            animation: fadeInUp 1.5s ease-in;
+        }
+        .card {
+            background: #222;
+            border: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255, 117, 140, 0.5);
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="LOGO.jpg" alt="Logo"> Typography Showcase
+            </a>
+        </div>
+    </nav>
+    
+    <header class="hero">
+        <div class="container">
+            <h1>Explore the Power of Typography</h1>
+            <p>Enhance readability and aesthetics with stunning text effects.</p>
+        </div>
+    </header>
+    
+    <section class="container mt-5">
+        <h2 class="typography-heading">Typography & Scripts</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5 class="text-primary">Kinda meeda voopu vasu sit thopu</h5>
+                    <p>Example of a unique typographic style.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5 class="text-warning">Bendakay Dondakay vasu sir naa gundekay</h5>
+                    <p>Another impressive font effect.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Carousel -->
+    <section class="container mt-5">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img1.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img2.jpg" class="d-block w-100" alt="Slide 2">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+    
+    <!-- Contact Form -->
+    <section class="container mt-5">
+        <h2 class="design-heading">Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control">
+            </div>
+            <button class="btn btn-danger">Submit</button>
+        </form>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
